@@ -95,7 +95,7 @@ int MiniMax(int Side, int Depth, int alpha, int beta)
 		{
 			ComputerList.pop_back();
 		}
-
+		
 		if (value > alpha)
 		{
 			//×îÓÅ
@@ -104,15 +104,17 @@ int MiniMax(int Side, int Depth, int alpha, int beta)
 				NewComputerX = x;
 				NewComputerY = y;
 			}
-
+			
 			//¼ôÖ¦
 			if (value >= beta)
 			{
 				CutNum++;
 				return beta;
 			}
+			
 			alpha = value;
 		}
+		
 	}
 	return alpha;
 }

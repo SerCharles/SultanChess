@@ -55,5 +55,8 @@ int main()
 	print();
 	Replay();
 	PrintLog();
+	while (1) {
+
+	}
 	return 0;
 }
